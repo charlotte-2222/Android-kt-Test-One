@@ -1,7 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:background="#CFFFF4"
+    tools:context=".MainActivity">
+
+
+
+
+    <EditText
+        android:id="@+id/etNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:hint="@string/number_or_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:hint="@string/number_or_exponent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNum1"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="171dp"
+        android:layout_height="60dp"
+        android:text="@string/reset"
+        android:textColor="@color/design_default_color_error"
+        android:background="@color/cardview_shadow_start_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/power"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNum2"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/add"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/subtract"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/subtract"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/multiply"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/multiply"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/divide"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/divide"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/power"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/power"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/power"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="311dp"
+        android:layout_height="77dp"
+        android:text="@string/result"
+        android:textSize="23sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNum2"
+        app:layout_constraintVertical_bias="0.042" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

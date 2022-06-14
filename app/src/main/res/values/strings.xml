@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Charlotte-Childers-CPT-188-Test-1</string>
+    <string name="reset">Reset</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
+    <string name="power">^</string>
+    <string name="result">Result:</string>
+    <string name="number_or_base">Number or Base</string>
+    <string name="number_or_exponent">Number or Exponent</string>
 </resources>
